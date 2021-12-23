@@ -7,8 +7,10 @@ if (isset($_POST['tambahBarang'])) {
         document.location.href = 'index.php#2';
         </script>";
     } else {
-        echo "<script>alert('Data gagal ditambahkan');
+        echo "<script>
+        alert('Data gagal ditambahkan');
         </script>";
+        echo mysqli_error($conn);
     }
 }
 
@@ -91,12 +93,12 @@ https://www.tooplate.com/view/2113-earth
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                                <input name="harga_barang" type="text" class="form-control" placeholder="Harga Barang..." required="">
+                                                <input name="harga_barang" type="number" class="form-control" placeholder="Harga Barang..." required="">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                                <input name="jumlah_barang" type="text" class="form-control" placeholder="Jumlah Barang..." required="">
+                                                <input name="jumlah_barang" type="number" class="form-control" placeholder="Jumlah Barang..." required="">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-12">

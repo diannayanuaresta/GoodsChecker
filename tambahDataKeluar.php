@@ -82,7 +82,7 @@ https://www.tooplate.com/view/2113-earth
                                             <div class="col-md-6">
                                                 <fieldset>
                                                     <label>Nama Barang</label>
-                                                    <input name="nama_barang" type="text" class="form-control" value="<?= $dt['nama_barang'] ?>" required="">
+                                                    <input name="nama_barang" type="text" class="form-control" value="<?= $dt['nama_barang'] ?>" required="" readonly>
                                                     <input type="hidden" name="id_barang" value="<?= $dt['id'] ?>">
                                                 </fieldset>
                                             </div>
@@ -109,7 +109,7 @@ https://www.tooplate.com/view/2113-earth
                                             <div class="col-md-6">
                                                 <fieldset>
                                                     <label>Jumlah Barang</label>
-                                                    <input name="jumlah_barang" type="number" max="<?= $dt['quantity'] ?>" class="form-control" value="<?= $dt['quantity'] ?>" required="">
+                                                    <input name="jumlah_barang" type="number" max="<?= $dt['quantity'] ?>" min="0" class="form-control" value="<?= $dt['quantity'] ?>" required="">
                                                 </fieldset>
                                             </div>
                                             <div class="col-md-12">
