@@ -81,7 +81,7 @@ https://www.tooplate.com/view/2113-earth
                   <h2>Administrator</h2>
                   <p><b> Name        : Felix Christian Santoso</b></p>
                   <p><b> NIM         : E12.2020.01430</b></p>
-                  <p><b> Kelompok    : 	E125307</b></p>
+                  <p><b> Kelompok    : 	E12301</b></p>
                   <p><b> Mata Kuliah : 	Programa Komputer </b></p>
                 </article>
                 <article id='tabs-2'>
