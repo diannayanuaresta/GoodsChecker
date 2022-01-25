@@ -20,11 +20,12 @@ function tambahIn($data)
     $nama_barang = $data["nama_barang"];
     $price = $data["harga_barang"];
     $quantity = $data["jumlah_barang"];
+    $ukuran = $data["ukuran"];
     $keterangan = $data["keterangan"];
 
     $query = "INSERT INTO barang_in
 				VALUES
-			('','$kode_barang','$nama_barang', $price, $quantity, '$keterangan', now(), now())";
+			('','$kode_barang','$nama_barang', $price, $quantity, $ukuran, '$keterangan', now(), now())";
 
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
@@ -38,11 +39,12 @@ function tambahOut($data)
     $nama_barang = $data["nama_barang"];
     $price = $data["harga_barang"];
     $quantity = $data["jumlah_barang"];
+    $ukuran = $data["ukuran"];
     $keterangan = $data["keterangan"];
 
 
     $query = "INSERT INTO barang_out
-        VALUES('','$kode_barang','$nama_barang', $price, $quantity,'$keterangan', now())";
+        VALUES('','$kode_barang','$nama_barang', $price, $quantity, $ukuran,'$keterangan', now())";
 
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
@@ -64,6 +66,7 @@ function editIn($data)
     $nama_barang = $data["nama_barang"];
     $price = $data["harga_barang"];
     $quantity = $data["jumlah_barang"];
+    $ukuran = $data["ukuran"];
     $keterangan = $data["keterangan"];
 
     $query = "UPDATE barang_in SET 
@@ -71,6 +74,7 @@ function editIn($data)
     nama_barang= '$nama_barang',
     price = $price,
     quantity = $quantity,
+    ukuran = $ukuran,
     keterangan = '$keterangan',
     updated_at = now() WHERE id= $id";
     mysqli_query($conn, $query);

@@ -106,10 +106,16 @@ https://www.tooplate.com/view/2113-earth
                                                     <input name="harga_barang" type="text" class="form-control" value="<?= $dt['price'] ?>" required="">
                                                 </fieldset>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                                 <fieldset>
                                                     <label>Jumlah Barang</label>
                                                     <input name="jumlah_barang" type="number" class="form-control" value="<?= $dt['quantity'] ?>" required="">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <fieldset>
+                                                    <label>Ukuran Barang</label>
+                                                    <input name="ukuran" type="number" class="form-control" value="<?= $dt['ukuran'] ?>" required="">
                                                 </fieldset>
                                             </div>
                                             <div class="col-md-12">

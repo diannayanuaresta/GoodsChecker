@@ -120,6 +120,7 @@ https://www.tooplate.com/view/2113-earth
                       <th scope="col">Nama</th>
                       <th scope="col">Type</th>
                       <th scope="col">Quantity</th>
+                      <th scope="col">Ukuran</th>
                       <th scope="col">Harga</th>
                       <th scope="col">Keterangan</th>
                       <th scope="col">Action</th>
@@ -133,6 +134,7 @@ https://www.tooplate.com/view/2113-earth
                         <td><?= $in['nama_barang']; ?></td>
                         <td><?= $in['kode_barang']; ?></td>
                         <td><?= $in['quantity']; ?></td>
+                        <td><?= $in['ukuran']; ?></td>
                         <td><?= $in['price']; ?></td>
                         <td><?= $in['keterangan']; ?></td>
                         <td><a href="tambahDataKeluar.php?id=<?= $in['id'] ?>">Barang Keluar |</a><a href="EditData.php?id=<?= $in['id'] ?>"> Edit |</a> <a href="hapusData.php?id=<?= $in['id'] ?>"> Hapus</a></td>
@@ -154,6 +156,7 @@ https://www.tooplate.com/view/2113-earth
                       <th scope="col">Nama</th>
                       <th scope="col">Type</th>
                       <th scope="col">Quantity</th>
+                      <th scope="col">Ukuran</th>
                       <th scope="col">Harga</th>
                       <th scope="col">Keterangan</th>
                       <th scope="col">Action</th>
@@ -167,6 +170,7 @@ https://www.tooplate.com/view/2113-earth
                         <td><?= $out['nama_barang']; ?></td>
                         <td><?= $out['kode_barang']; ?></td>
                         <td><?= $out['quantity']; ?></td>
+                        <td><?= $out['ukuran']; ?></td>
                         <td><?= $out['price']; ?></td>
                         <td><?= $out['keterangan']; ?></td>
                         <td><a href="hapusDataKeluar.php?id=<?= $out['id'] ?>"> Hapus</a></td>

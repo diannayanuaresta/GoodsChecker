@@ -96,9 +96,14 @@ https://www.tooplate.com/view/2113-earth
                                                 <input name="harga_barang" type="number" class="form-control" placeholder="Harga Barang..." required="">
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-3">
                                             <fieldset>
                                                 <input name="jumlah_barang" type="number" class="form-control" placeholder="Jumlah Barang..." required="">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <input name="ukuran" type="number" class="form-control" placeholder="Ukuran Barang..." required="">
                                             </fieldset>
                                         </div>
                                         <div class="col-md-12">
